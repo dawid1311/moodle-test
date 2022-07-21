@@ -4,12 +4,12 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = getenv('DATABASE_TYPE');
+$CFG->dbtype    = getenv(pgsql);
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = getenv('DATABASE_HOST');
-$CFG->dbname    = getenv('DATABASE_NAME');
-$CFG->dbuser    = getenv('DATABASE_USER');
-$CFG->dbpass    = getenv('DATABASE_PASSWORD');
+$CFG->dbhost    = getenv(ec2-34-200-35-222.compute-1.amazonaws.com);
+$CFG->dbname    = getenv(d6otufp8o4sqp4);
+$CFG->dbuser    = getenv(ioskptpumdnpha);
+$CFG->dbpass    = getenv(67a42b196de77cd57a199c7e6095877c2576dab9c2f2cc6f33a4167b6f4d1285);
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
@@ -17,8 +17,8 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = getenv('WWWROOT');
-$CFG->dataroot  = getenv('DATAROOT');
+$CFG->wwwroot   = getenv(http://mooddle-test-dawid.herokuapp.com/);
+$CFG->dataroot  = getenv(/tmp);
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
